@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+
+}
+/* start title */
+.title-text{
+    font-size: 5px;
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+}
+/* end title */
+
+/* Nav Bar */
+
+.nav-bar{
+    padding: 20px;
+    font-family:Verdana;
+    font-size: 50px;
+}
+.menu-right{
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+/* End Nav Bar */
+
+
+/* header */
+.header{
+    min-height: 100vh;
+    background: url('Images/hero.jpg') center/cover no-repeat fixed;
+    margin-top: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .title{
+    color:white;
+    font-size: 90px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.hero .title1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Stick', sans-serif;
+}
+
+
+.hero-button{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 13px 20px ;
+    border-radius: 200px;
+    font-weight: bold;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border: 2px solid red;
+    margin-top: 10px;
+}
+.hero-button:hover{
+    background: white;
+    color: red;
+    border:none;
+}
+.pulsate{
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: .3;
+    color:green;
+
+}
+@-webkit-keyframes pulsate{
+    0%{
+        opacity: .3;
+
+    }
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: .3;
+    }
+}
+/* start about us */
+#about{
+    padding: 40ox;
+
+}
+.about{
+    margin: 30px 0;
+    display: flex;
+
+}
+.about-icon{
+    font-size: 60px;
+    color: orange;
+    margin-right: 20px;
+}
+
+.about-subtitle{
+    text-transform: capitalize;
+    color: orange;
+    font-size:25px;
+
+}
+
+.about-info{
+    margin-top: 10px;
+    line-height: 1.5;
+
+}
+
+.about-icon:hover,
+.about-subtitle:hover{
+    transition: transform 2s ease, color 2s ease;
+    transform: translateY(-10px);
+    color:red;
+    cursor: pointer;
+}
+
+@media screen and (min-width:576px){
+    .about-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .about{
+        flex:0 0 calc(50% - 16px);
+    }
+
+}
+@media screen and (min-width: 972px){
+    .about{
+        flex:0 0 calc(33.3% - 16px);
+    }
+}
+/* end about us */
+
+/* start menu*/
+.menu-image{
+    min-height: 80vh;
+    background: url(Images/menu.jpg)center/cover fixed no-repeat;
+}
+.menu-text{
+    min-height: 80vh;
+    align-items: center;
+    background-color: orange;
+    columns: black;
+    padding: 40px 0;
+}
+.menu-text-center{
+    width: 90%;
+    margin: 0 auto;
+}
+.menu-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.menu-text p{
+    margin: 20px 0;
+    line-height: 2;
+}
+.menu-text a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: rgb(10, 10, 10);
+    color: orange;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.menu-text a:hover{
+    color: orange;
+    background:white;
+    border: none;
+}
+@media screen and (min-width: 776px){
+    .menu{
+        display: flex;
+    }
+    .menu-text{
+        flex:0 0 30%;
+    }
+    .menu-image{
+        flex: 0 0 70%;
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    }
+    .menu{
+        background: orange;
+    }
+}
+/*  end menu */
+
+/* social-icons */
+#social-icons{
+    height: 150px;
+    background: white;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+#social-icons a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 35px;
+    border-radius: 5px;
+    transition: transform 2s ease, color 2s ease;
+    color: black;
+}
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+.facebook{
+    color:#3b5998;
+}
+.instagram{
+    color:#e1306c ;
+}
+
+
+
+
+/* End Social-icons */
