@@ -47,7 +47,7 @@ ul li a{
 /* header */
 .header{
     min-height: 100vh;
-    background: url('Images/hero.jpg') center/cover no-repeat fixed;
+    background: url('hero.jpg') center/cover no-repeat fixed;
     margin-top: auto;
     background-size: cover;
     background-attachment: fixed;
@@ -173,7 +173,7 @@ ul li a{
 /* start menu*/
 .menu-image{
     min-height: 80vh;
-    background: url(Images/menu.jpg)center/cover fixed no-repeat;
+    background: url(menu.jpg)center/cover fixed no-repeat;
 }
 .menu-text{
     min-height: 80vh;
